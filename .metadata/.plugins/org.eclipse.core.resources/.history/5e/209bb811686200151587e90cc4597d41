@@ -1,0 +1,8 @@
+
+public class StudentDatabase {
+
+	public StudentDatabase() {
+		// TODO Auto-generated constructor stub
+	}
+
+}

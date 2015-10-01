@@ -1,0 +1,33 @@
+/**
+ * 
+ */
+
+/**
+ * @author edwardlambke
+ *
+ */
+public class EmailDriver {
+
+	/**
+	 * 
+	 */
+
+	/**
+	 * @param args
+	 */
+	public static void main(String[] args) {
+		EmailInfo emailInfo = new EmailInfo();
+
+		emailInfo.addFriend(null,null);
+		emailInfo.addFriend("me","asdf@asdf.asdf");
+		
+		emailInfo.getAddress(null);
+		emailInfo.getAddress("you");
+		emailInfo.getAddress("me");
+	}
+	
+	private void test(String test){
+		System.out.println(test);
+	}
+
+}

@@ -1,0 +1,18 @@
+/**
+ * 
+ */
+
+/**
+ * @author edwardlambke
+ *
+ */
+public class EmailInfo {
+
+	/**
+	 * 
+	 */
+	public EmailInfo() {
+		// TODO Auto-generated constructor stub
+	}
+
+}

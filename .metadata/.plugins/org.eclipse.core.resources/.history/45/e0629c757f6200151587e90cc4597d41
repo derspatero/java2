@@ -1,0 +1,59 @@
+import java.util.HashMap;
+
+/**
+ * 
+ */
+
+/**
+ * @author edwardlambke
+ *
+ */
+public class EmailInfo {
+
+	/**
+	 * 
+	 */
+	
+	private HashMap<String, String> addressBook;
+	
+	public EmailInfo() {
+		addressBook = new HashMap<String, String>();
+	}
+	
+	/** @return the properly-formatted name. */
+	private String formatName(String name) {
+		return name;
+	}
+	
+	/** Add a friend to the address book. The friend's name must beformatted before being stored. */
+	public void addFriend(String name, String email){
+		if ((name != null) && (email != null)){
+			addressBook.put(name, email);
+		}
+		else{
+			System.out.println("name and email cannot be null");
+		}
+			
+		
+	}
+	/** Remove a friend from the address book. The name passed incan be in upper case, lower case, or mixed. The friend andhis/her email will be removed from the address book.*/
+	public void removeFriend(String name) {
+		
+	}
+	
+	/** Return an email address based on friend’s name. The namepassed in can be in upper case, lower case, or mixed. Thefriend's email address will be returned.*/
+	public String getAddress(String name){
+		return name;
+	}
+	
+	/** Find and display friends based on their email address. Theremight be more than one friend using the same email. */
+	public void findFriends(String email){
+		
+	}
+	
+	/** List all friends and their email addresses */
+	public void listAll(){
+		
+	}
+
+}

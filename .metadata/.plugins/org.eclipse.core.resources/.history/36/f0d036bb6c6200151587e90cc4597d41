@@ -1,0 +1,53 @@
+import java.util.HashMap;
+
+/**
+ * 
+ */
+
+/**
+ * @author edwardlambke
+ *
+ */
+public class StudentDatabase {
+
+	/**
+	 * 
+	 */
+	
+	public static final int NUM_QUIZZES = 10;
+	public static final int MIN_GRADE = 0;
+	public static final int MAX_GRADE = 100;
+	
+	private HashMap<String, int[]> quizMarks;
+	
+	public StudentDatabase() {
+		// TODO Auto-generated constructor stub
+	}
+
+	/** @return the properly-formatted name. */
+	private String formatName(String name) {
+		System.out.println(name.toLowerCase().substring(0, 1).toUpperCase() + name.toLowerCase().substring(1));
+		return name.substring(0, 1).toUpperCase() + name.toLowerCase().substring(1);
+	}
+	
+	/** Add a student to the database and create a new array to holdthat student's quiz marks ( NUM_QUIZZES quizzes). These markswill by default be set to MIN_GRADE. */
+	public void addStudent(String studentName) {
+		int[] marks = new int[10];
+		quizMarks.put(formatName(studentName), marks);
+	}
+	
+	/** @return the array of quiz marks for this student. */
+	public int[] getQuizzes(String student) {
+		return new int[10];
+	}
+	/** Change the mark for the specified student. This methodensures the student exists in the database. It also ensures the quiz to be changed is valid, and the mark is within the rangeMIN_GRADE to MAX_GRADE. If anything is not valid it displays anappropriate error message. */ 
+	public void changeQuizMark(String studentName, int whichQuiz, int newMark) {
+		
+	}
+	
+	/** Display the quiz marks for all students in the database. */
+	public void showQuizMarks() {
+		
+	}
+	
+}

@@ -1,0 +1,23 @@
+import java.util.HashMap;
+
+/**
+ * 
+ */
+
+/**
+ * @author edwardlambke
+ *
+ */
+public class EmailInfo {
+
+	/**
+	 * 
+	 */
+	
+	private HashMap<String, String> addressBook;
+	
+	public EmailInfo() {
+		addressBook = new HashMap<String, String>();
+	}
+
+}

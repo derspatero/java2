@@ -1,0 +1,63 @@
+/**
+ * 
+ */
+
+/**
+ * @author edward lambke a00892244
+ *
+ */
+public class EmailDriver {
+
+	/**
+	 * @param args
+	 */
+	public static void main(String[] args) {
+		EmailInfo emailInfo = new EmailInfo();
+
+		test("List all addresses with empty address book");
+		emailInfo.listAll();
+		
+		test("Add Friend with invalid data");
+		emailInfo.addFriend(null,null);
+		
+		test("Add Friend with valid data");
+		emailInfo.addFriend("me","asdf@asdf.asdf");
+		
+		test("Get email with invalid data");
+		test(emailInfo.getAddress(null));
+		test(emailInfo.getAddress("you"));
+		
+		test("Get email with valid data");
+		test(emailInfo.getAddress("me"));
+		
+		test("Add friends with valid data");
+		emailInfo.addFriend("you","qWER@asDF.asdf");
+		emailInfo.addFriend("us","ASDF@asDF.asdf");
+
+		test("List all friends");
+		emailInfo.listAll();
+		
+		test("Find friends with invalid email");
+		emailInfo.findFriends("zxcv@zxcv.zxcv");
+		
+		test("Find friends with valid email");
+		emailInfo.findFriends("asdf@ASDF.ASDF");
+		
+		test("Remove friend with invalid data");
+		emailInfo.removeFriend(null);
+		emailInfo.removeFriend("them");
+		
+		test("Remove friend with valid data");
+		emailInfo.removeFriend("me");
+		test(emailInfo.getAddress("me"));
+		emailInfo.findFriends("asdf@ASDF.ASDF");
+		
+		test("List all friends");
+		emailInfo.listAll();
+	}
+	
+	private static void test(String test){
+		System.out.format("%s\n",test);
+	}
+
+}

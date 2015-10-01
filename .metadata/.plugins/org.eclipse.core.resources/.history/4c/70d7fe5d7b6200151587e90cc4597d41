@@ -1,0 +1,48 @@
+/**
+ * 
+ */
+
+/**
+ * @author edwardlambke
+ *
+ */
+public class StudentDriver {
+
+	/**
+	 * 
+	 */
+	/**
+	 * @param args
+	 */
+	
+	
+	public static void main(String[] args) {
+		StudentDatabase db = new StudentDatabase();
+		db.addStudent("coleen");
+		db.changeQuizMark("COLEEN", 0, 20);
+		db.addStudent("BILL");
+		db.changeQuizMark("bill", 8, 10);
+		
+		db.showQuizMarks();
+		
+		db.changeQuizMark("bill", 6, 100);
+		db.showQuizMarks();
+		
+		db.changeQuizMark("bill", 1, 110);
+		db.changeQuizMark("bill", 11, 100);
+		db.changeQuizMark("Fred", 1, 100);
+		db.showQuizMarks();
+		
+		getQuizzes(db, "bill");
+		
+		getQuizzes(db, "missing");
+	}
+	
+	private static void getQuizzes(StudentDatabase db, String name){
+		System.out.format("\n\n%s:",name);
+		for (int mark : db.getQuizzes(name)) {
+			System.out.format("%d ", mark);
+		}
+	}
+
+}

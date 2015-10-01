@@ -1,0 +1,23 @@
+/**
+ * 
+ */
+
+/**
+ * @author edwardlambke
+ *
+ */
+public class EmailDriver {
+
+	/**
+	 * 
+	 */
+
+	/**
+	 * @param args
+	 */
+	public static void main(String[] args) {
+		EmailInfo emailInfo = new EmailInfo();
+
+	}
+
+}
